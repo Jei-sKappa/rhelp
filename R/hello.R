@@ -36,7 +36,7 @@ rhelp2 <- function(question) {
 #' @param question A question about R packages.
 #' @return The content of the response.
 #' @examples
-#' rhelp2("exp()")
+#' rhelp3("exp()")
 rhelp3 <- function(question) {
   library("httr")
   content(POST("https://rhelp-app-5p3p2.ondigitalocean.app/rhelp3", body = question), "parsed")
@@ -47,8 +47,15 @@ rhelp3 <- function(question) {
 #' @param question A question about R packages.
 #' @return The content of the response.
 #' @examples
-#' rhelp2("exp()")
+#' rhelp4("exp()")
 rhelp4 <- function(question) {
   library("httr")
   content(POST("https://rhelp-app-5p3p2.ondigitalocean.app/rhelp4", body = question), "parsed")
+}
+
+#' clearhistory()
+clearhistory <- function() {
+  write("", file=".blank")
+  loadhistory(".blank")
+  unlink(".blank")
 }

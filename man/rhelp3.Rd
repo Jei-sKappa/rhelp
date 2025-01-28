@@ -16,5 +16,5 @@ The content of the response.
 Info about R packages 3
 }
 \examples{
-rhelp2("exp()")
+rhelp3("exp()")
 }
