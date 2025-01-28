@@ -2,7 +2,7 @@
 % Please edit documentation in R/hello.R
 \name{rhelp2}
 \alias{rhelp2}
-\title{Info about R packages copy}
+\title{Info about R packages 2}
 \usage{
 rhelp2(question)
 }
@@ -13,7 +13,7 @@ rhelp2(question)
 The content of the response.
 }
 \description{
-Info about R packages copy
+Info about R packages 2
 }
 \examples{
 rhelp2("exp()")
